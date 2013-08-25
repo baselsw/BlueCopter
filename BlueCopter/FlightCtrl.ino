@@ -1,12 +1,4 @@
 void FlightControl(){
-//  int kpr;
-//  int kpi;
-//  int kpd;
-//  kpr=map(rxVal[3],RKNOB_RMIN,RKNOB_RMAX,RKNOB_WMIN,RKNOB_WMAX);
-//  kpd=map(rxVal[4],LKNOB_RMIN,LKNOB_RMAX,LKNOB_WMIN,LKNOB_WMAX);
-//  PIDangleX.ChangeParameters(ANGLEX_KP,0,(float)(kpr/1000.0),ROLL_PID_MIN,ROLL_PID_MAX);
-//  PIDangleY.ChangeParameters(ANGLEY_KP,0,(float)(kpr/1000.0),PITCH_PID_MIN,PITCH_PID_MAX);
-//  PIDyaw.ChangeParameters(YAW_PID_KP,(float)(kpi/1000.0),YAW_PID_KD,YAW_PID_MIN,YAW_PID_MAX);
 #ifdef SAFE
   if(rxVal[5]<1100){
     motorArm();
