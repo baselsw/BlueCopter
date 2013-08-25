@@ -1,0 +1,5 @@
+MPULib	KEYWORD1
+init	KEYWORD2
+getAxlData	KEYWORD2
+getGyroData	KEYWORD2
+getMagData	KEYWORD2
