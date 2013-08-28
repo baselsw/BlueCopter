@@ -25,13 +25,13 @@
 #define YAW_PID_MIN  -50.0
 #define YAW_PID_MAX  50.0
 
-#define ANGLEX_KP 5.0
+#define ANGLEX_KP 9.0
 #define ANGLEX_KI 0.001
 #define ANGLEX_KD -0.02
 #define ANGLEX_MIN -100.0
 #define ANGLEX_MAX 100.0
 
-#define ANGLEY_KP 5.0
+#define ANGLEY_KP 9.0
 #define ANGLEY_KI 0.001
 #define ANGLEY_KD -0.02
 #define ANGLEY_MIN -100.0
