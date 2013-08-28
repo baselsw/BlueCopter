@@ -7,13 +7,13 @@
 
 //-------PID Config----------
 
-#define ROLL_PID_KP  0.200
+#define ROLL_PID_KP  0.220
 #define ROLL_PID_KI  0.200
 #define ROLL_PID_KD  0.01
 #define ROLL_PID_MIN  -50.0
 #define ROLL_PID_MAX  50.0
 
-#define PITCH_PID_KP  0.200
+#define PITCH_PID_KP  0.220
 #define PITCH_PID_KI  0.200
 #define PITCH_PID_KD  0.01
 #define PITCH_PID_MIN  -50.0
