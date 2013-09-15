@@ -7,14 +7,14 @@
 
 //-------PID Config----------
 
-#define ROLL_PID_KP  0.220
-#define ROLL_PID_KI  0.200
+#define ROLL_PID_KP  0.250
+#define ROLL_PID_KI  0.250
 #define ROLL_PID_KD  0.01
 #define ROLL_PID_MIN  -50.0
 #define ROLL_PID_MAX  50.0
 
-#define PITCH_PID_KP  0.220
-#define PITCH_PID_KI  0.200
+#define PITCH_PID_KP  0.250
+#define PITCH_PID_KI  0.250
 #define PITCH_PID_KD  0.01
 #define PITCH_PID_MIN  -50.0
 #define PITCH_PID_MAX  50.0
@@ -49,13 +49,13 @@
 
 #define ROLL_RMIN  1040
 #define ROLL_RMAX  1976
-#define ROLL_WMIN  -45
-#define ROLL_WMAX  45
+#define ROLL_WMIN  -30
+#define ROLL_WMAX  30
 
 #define PITCH_RMIN  1140
 #define PITCH_RMAX  1932
-#define PITCH_WMIN  -45
-#define PITCH_WMAX  45
+#define PITCH_WMIN  -30
+#define PITCH_WMAX  30
 
 #define YAW_RMIN  1028
 #define YAW_RMAX  2004
@@ -72,7 +72,7 @@
 #define LKNOB_WMIN  0
 #define LKNOB_WMAX  500
 
-#define RX_RATE_SENSITIVITY  1
+#define RX_RATE_SENSITIVITY  3
 #define RX_ANGLE_DAMPNING  20.0  //D-term dampning
 #define RX_EXPO
 //..........................
