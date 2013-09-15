@@ -32,9 +32,9 @@ float gy_aver=0;
 float gz_aver=0;
 
 
-float setX = 0; //Rate Setpoint for PID
-float setY = 0; //Rate Setpoint for PID
-float setZ = 0; //Rate Setpoint for PID
+int setX = 0; //Rate Setpoint for PID
+int setY = 0; //Rate Setpoint for PID
+int setZ = 0; //Rate Setpoint for PID
 
 volatile int rxVal[6]={0,0,0,0,0,0};
 
@@ -62,9 +62,3 @@ void loop() {
   debugProcess();
 #endif
 }
-
-
-
-
-
-
