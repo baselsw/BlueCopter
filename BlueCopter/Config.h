@@ -8,14 +8,14 @@
 //-------PID Config----------
 
 #define ROLL_PID_KP  0.250
-#define ROLL_PID_KI  0.250
-#define ROLL_PID_KD  0.01
+#define ROLL_PID_KI  0.950
+#define ROLL_PID_KD  0.011
 #define ROLL_PID_MIN  -50.0
 #define ROLL_PID_MAX  50.0
 
 #define PITCH_PID_KP  0.250
-#define PITCH_PID_KI  0.250
-#define PITCH_PID_KD  0.01
+#define PITCH_PID_KI  0.950
+#define PITCH_PID_KD  0.011
 #define PITCH_PID_MIN  -50.0
 #define PITCH_PID_MAX  50.0
 
@@ -25,13 +25,13 @@
 #define YAW_PID_MIN  -50.0
 #define YAW_PID_MAX  50.0
 
-#define ANGLEX_KP 9.0
+#define ANGLEX_KP 5.0
 #define ANGLEX_KI 0.001
 #define ANGLEX_KD -0.02
 #define ANGLEX_MIN -100.0
 #define ANGLEX_MAX 100.0
 
-#define ANGLEY_KP 9.0
+#define ANGLEY_KP 5.0
 #define ANGLEY_KI 0.001
 #define ANGLEY_KD -0.02
 #define ANGLEY_MIN -100.0
