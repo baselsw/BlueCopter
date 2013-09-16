@@ -36,7 +36,7 @@ int setX = 0; //Rate Setpoint for PID
 int setY = 0; //Rate Setpoint for PID
 int setZ = 0; //Rate Setpoint for PID
 
-volatile int rxVal[6]={0,0,0,0,0,0};
+volatile int rxVal[6]={1500,1500,1500,0,0,1000};
 
 int throttle=MOTOR_ZERO_LEVEL;
 byte rateAngleSwitch = 0;
