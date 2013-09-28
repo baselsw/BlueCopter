@@ -8,15 +8,19 @@ int accx_temp=0;
 int accy_temp=0;
 int accz_temp=0;
 
-int ts=millis();
+unsigned long ts=millis();
+unsigned long tf=micros();
 
 void updateSensorVal(){
-  updateGyro();  //Update as fast as possible, (~400Hz update rate)
-  if((millis()-ts)>20){  //Update only once per 20ms (50Hz update rate)
-  updateAcc();
-  ts=millis();
+  if((micros()-tf)>1300){
+    updateGyro();  //Update only per 1300us, (~800Hz update rate)
+    tf=micros();  
   }
-  int t = millis();
+  if((millis()-ts)>20){  //Update only once per 20ms (50Hz update rate)
+    updateAcc();
+    ts=millis();
+  }
+  unsigned long t = millis();
   float dt = (float)(t-tp)/1000.0;
   float accx = atan2(accx_temp,accz_temp)*RadToDeg;
   float accy = atan2(accy_temp,accz_temp)*RadToDeg;
@@ -52,13 +56,13 @@ void updateGyro(){
 
 void gyroMAF(){//Moving average filter
 #if GYRO_HPF_NR > 0
-float gx_old=gx_aver;
-float gy_old=gy_aver;
-float gz_old=gz_aver;
+  float gx_old=gx_aver;
+  float gy_old=gy_aver;
+  float gz_old=gz_aver;
 #endif
-gx_aver=0;
-gy_aver=0;
-gz_aver=0;
+  gx_aver=0;
+  gy_aver=0;
+  gz_aver=0;
   for(byte i=0;i<GYRO_MAF_NR;i++){
     gx_aver=gx_aver+gx_temp[i];
     gy_aver=gy_aver+gy_temp[i];
@@ -67,29 +71,10 @@ gz_aver=0;
   gx_aver=(float)gx_aver/GYRO_MAF_NR;
   gy_aver=(float)gy_aver/GYRO_MAF_NR;
   gz_aver=(float)gz_aver/GYRO_MAF_NR;
-  
-  #if GYRO_HPF_NR > 0
+
+#if GYRO_HPF_NR > 0
   gx_aver=(GYRO_HPF_NR*gx_old+(100.0-GYRO_HPF_NR)*gx_aver)/100.0;
   gy_aver=(GYRO_HPF_NR*gy_old+(100.0-GYRO_HPF_NR)*gy_aver)/100.0;
   gz_aver=(GYRO_HPF_NR*gz_old+(100.0-GYRO_HPF_NR)*gz_aver)/100.0;
-  #endif
+#endif
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
