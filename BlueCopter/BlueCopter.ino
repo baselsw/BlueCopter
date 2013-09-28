@@ -24,7 +24,7 @@
 PIDCont PIDroll,PIDpitch,PIDyaw,PIDangleX,PIDangleY;
 MPULib MPU;
 
-int tp;
+unsigned long tp;
 float angles[2]={
   0.0,0.0};
 float gx_aver=0;
