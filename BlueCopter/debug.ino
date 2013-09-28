@@ -50,7 +50,14 @@ void debugProcess(){
 #ifdef DEBUG_SERIAL_CHART
   Serial.print(angles[0]);
   Serial.print(',');
-  Serial.print(angles[1]);  
+  Serial.print(angles[1]);
+  Serial.print(',');
+  Serial.print((float)(gx_aver));  
+  Serial.print(',');
+  Serial.print((float)(gy_aver));  
+  Serial.print(',');
+  Serial.print((float)(gz_aver));  
+
 #endif
 
   Serial.print('\n');
