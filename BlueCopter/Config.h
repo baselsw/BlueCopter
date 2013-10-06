@@ -26,14 +26,14 @@
 #define YAW_PID_MAX  50.0
 
 #define ANGLEX_KP 5.0
-#define ANGLEX_KI 0.001
-#define ANGLEX_KD -0.02
+#define ANGLEX_KI 0.02
+#define ANGLEX_KD -0.015
 #define ANGLEX_MIN -100.0
 #define ANGLEX_MAX 100.0
 
 #define ANGLEY_KP 5.0
-#define ANGLEY_KI 0.001
-#define ANGLEY_KD -0.02
+#define ANGLEY_KI 0.02
+#define ANGLEY_KD -0.015
 #define ANGLEY_MIN -100.0
 #define ANGLEY_MAX 100.0
 
@@ -49,13 +49,13 @@
 
 #define ROLL_RMIN  1040
 #define ROLL_RMAX  1976
-#define ROLL_WMIN  -30
-#define ROLL_WMAX  30
+#define ROLL_WMIN  -15
+#define ROLL_WMAX  15
 
 #define PITCH_RMIN  1140
 #define PITCH_RMAX  1932
-#define PITCH_WMIN  -30
-#define PITCH_WMAX  30
+#define PITCH_WMIN  -15
+#define PITCH_WMAX  15
 
 #define YAW_RMIN  1028
 #define YAW_RMAX  2004
