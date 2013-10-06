@@ -1,17 +1,25 @@
 /*
-  BlueCopter - Quadcopter firmware - V1.0
+  BlueCopter - Quadcopter firmware
   
   Created by Basel Al-Rudainy, 6 april 2013.
   
-  This firmware is free software; you can redistribute it and/or
+  This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
   License as published by the Free Software Foundation; either
   version 2.1 of the License, or (at your option) any later version.
 
-  This firmware is distributed in the hope that it will be useful,
+  This library is distributed in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
   Lesser General Public License for more details.
+  
+  Change log:
+  V1.02 - Implemented a proper receiver expo for smooth response.
+          Commenting the line "#define RX_EXPO" will disable the RX-expo.
+  V1.01 - Made the sketch run more efficiently and reduced code size. 
+          With this change I managed to find better PID values and thus
+          get better/faster stabilization 
+  V1.00 - BlueCopter firmware created!
 */
 
 #include "Config.h"
